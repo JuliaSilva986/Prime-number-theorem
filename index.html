@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The prime number theorem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Prime number theorem (PNT)</h1>
+    </header>
+
+    <div class="contenedor-principal">
+    <main>
+    <h2>Statement</h2>
+    <p>Let &pi;(x) be the prime-counting function defined to be the number of primes less than or equal to x, then the limit of the quotient of the two functions &pi;(x) and x /log x as x goes to infinity is 1</p>
+    <img src="PNT.jpg" alt="" width="200" height="80">
+    <p>known as the asymptotic law of distribution of prime numbers. </p>
+
+    <h3>Main idea</h3>
+    <p>The Prime Number Theorem (PNT) describes the asymptotic distribution of prime numbers among positive integers. Its main idea is that the density of prime numbers decreases as numbers get larger.</p>
+    <h3>Historical context</h3>
+    <p>The theorem was conjectured in the 18th century by mathematicians such as Gauss and Legendre, based on numerical evidence.</p>
+    <p>It was rigorously proven independently by Jacques Hadamard and Charles-Jean de la Vallée-Poussin in 1896, using tools from complex analysis, particularly properties of the Riemann zeta function.</p>
+
+    <h3>Proof sketch</h3>
+    <ol>
+    <li><p>The idea is that there is a connection between the Zeta Function and primes, and using the Euler product formula.</p></li>
+
+    <div class="contenedor">
+        <figure class="imagen_pie">
+            <img  src="RZF.webp" alt="Riemann zeta function">
+            <figcaption><b>Riemann zeta function</b></figcaption>
+        </figure>
+        
+        <figure>
+            <img  src="EPF.png" alt="Euler product formula" id="imagen1">
+            <figcaption> <b>Euler product formula</b></figcaption>
+        
+        </figure>
+        
+    </div>
+
+    <li><p>Using the analytical properties of the Riemann zeta function, showing that the function has no zeros on the real line Re(z)=1</p></li>
+    <li><p>Then using that the distribution of primes is realted to the behavior of 𝜁(z) near z=1</p></li>
+    <li><p>Finally Use a Tauberian theorem to link the asymptotic behavior of a series to its terms.</p></li>
+    <li><p>Specifically, deduce from the properties of ζ(s) that:</p>
+    <img  src="asymptotic.png" alt="Asymptotic behavior of counting primes and x/log(x)" >
+
+    </ol>
+
+   
+   </main>
+   <aside>
+    <figure>
+         <img src="220px-De_La_Vallée_Poussin.jpg" alt="Charles Jean de la Vallée Poussin">
+         <figcaption><b>Charles Jean de la Vallée Poussin</b></figcaption>
+    </figure>
+   </aside>
+   </div>
+</body>
+</html>
